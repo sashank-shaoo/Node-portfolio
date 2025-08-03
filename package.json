@@ -1,4 +1,7 @@
 {
+  "engines" : {
+    "node":"v22.14.0"
+  },
   "name": "portpolio-node.js",
   "version": "1.0.0",
   "description": "A standart portpolio",
