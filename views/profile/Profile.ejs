@@ -1,0 +1,73 @@
+<% layout("/layouts/boilerplate") -%>
+<div class="container mt-4">
+  <div class="row g-1 align-items-center upper-box shadow rounded-4 p-2">
+    <div class="col-md-7 text-center upper-box1">
+      <div class="box1-1 mb-4">
+        <h1>Hello, Everyone 👋</h1>
+        <h1>Welcome to my</h1>
+        <h1><strong>Portfolio</strong></h1>
+      </div>
+      <p class="lead">I am Sashank Sahoo, a MERN Stack developer, currently pursuing MCA (1st year) at GITA, Bhubaneswar.</p>
+      <a href="/profile/contact">
+        <button class="rainbow-hover mt-3">
+          <span class="sp">Contact me</span>
+        </button>
+      </a>
+    </div>
+    <div class="col-md-5">
+      <img src="/images/trick-or-treat-instagram-post-square.png" alt="Profile Picture" class="img-fluid rounded-4 shadow-sm" />
+    </div>
+  </div>
+
+  <div class="card mb-4 mt-5 p-3 lower-box">
+    <div class="row g-3 align-items-center">
+      <div class="col-md-4 text-center">
+        <img src="/images/pumkin-imh.png" alt="About Me" class="img-fluid rounded-3 shadow" />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h2 class="card-title mb-3">About Me 👤</h2>
+          <ul class="list-unstyled">
+            <li><i class="fa-solid fa-arrow-right me-2"></i>I am Sashank Sahoo.</li>
+            <li><i class="fa-solid fa-arrow-right me-2"></i>Highly motivated MCA student at GITA, Bhubaneswar.</li>
+            <li><i class="fa-solid fa-arrow-right me-2"></i>Skilled in JavaScript, Java, Data Structures, and Algorithms.</li>
+            <li><i class="fa-solid fa-arrow-right me-2"></i>Recently completed MERN Stack development training.</li>
+          </ul>
+          <h2 class="card-title mb-3">Education 🎓</h2>
+          <ul class="list-unstyled">
+            <li><i class="fa-solid fa-arrow-right me-2"></i><b>10Th</b> : Saraswati Sishu VidyaMandir(HSC)</li>
+            <li><i class="fa-solid fa-arrow-right me-2"></i><b>12Th(Science)</b> : Narasingh Choudhury(CHSC)</li>
+            <li><i class="fa-solid fa-arrow-right me-2"></i><b>+3(Bsc)</b> : Regional Degree College(Utkal University)</li>
+            <li><i class="fa-solid fa-arrow-right me-2"></i><b>MCA</b> : GITA Autonomous</li>
+          </ul>
+          <div class="mt-3">
+            <a href="https://www.linkedin.com/in/sashank-sahoo-282b5b2ab" class="card-link" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/sashank-shaoo" class="card-link" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card p-3 mb-4">
+    <div class="row g-3">
+      <div class="col-md-5" id="map"></div>
+      <div class="col-md-7">
+        <div class="card-body">
+          <h4 class="card-title">Location Details 🌍</h4>
+          &nbsp;
+          <p><strong>Coordinates</strong>: 20.8097° N, 86.5186° E</p>
+          <p><strong>Country</strong>: INDIA</p>
+          <p><strong>State</strong>: Odisha</p>
+          <p><strong>District</strong>: Jajpur</p>
+          <p><strong>Village</strong>: Mangalpur</p>
+          <p><strong>Post</strong>: Mangalpur</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  mapboxgl.accessToken = '<%= mapboxToken %>';
+</script>
+<script src="/js/map.js"></script>

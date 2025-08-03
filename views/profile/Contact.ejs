@@ -1,0 +1,68 @@
+<% layout("/layouts/boilerplate") -%>
+<h1 style="text-align: center;">Contact Me</h1>
+<p style="text-align: center;">i am excited to hear from you!Wheather you have a project,idea,or question,feel free to reach out.i'm always open to new collaborations and opportunities.</p>
+<div class="row mx-auto">
+  <div class="col-sm-3 mb-3 mb-sm-0 border  mx-auto rounded-4 bg-white">
+    <div class="card">
+      <div class="card-body icon-box">
+        <h5 class="card-title text-center fs-3"><i class="fa-solid fa-phone"></i></h5>
+        &nbsp;
+        <p class="card-text text-center">+91-7750939733</p>
+        <p class="card-text text-center">+91-7008779698</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3  mb-3 mb-sm-0 border mx-auto rounded-4 bg-white">
+    <div class="card">
+      <div class="card-body icon-box">
+        <h5 class="card-title text-center fs-3"><i class="fa-solid fa-message"></i></h5>
+        &nbsp;
+        <p class="card-text text-center">sashanksahoo2@gmail.com</p>
+        <p class="card-text text-center">sashanksahoo8@gmail.com</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3 mb-3 mb-sm-0 border mx-auto rounded-4 bg-white ">
+    <div class="card">
+      <div class="card-body icon-box">
+        <h5 class="card-title text-center fs-3"><i class="fa-solid fa-location-dot"></i></h5>
+        &nbsp;
+        <p class="card-text text-center">Gandhi Institute for Technological Advancement, Bhubaneswar.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<h1 class="text-center mt-3">Get Connected With Me</h1>
+<p class="text-center mt-2">⚠️ Please wait a moment after clicking the submit button !! because it is based on <strong>await</strong> and <strong>async</strong> function so it may take few second.</p>
+<div class="row bg-white mt-3 mb-3  rounded-2 border g-0">
+  <form class="row mx-auto" id="contactForm" method="POST" action="/profile/contact/mail">
+    <div class="mb-3 col-md-6 mt-2">
+      <label for="name" class="form-label">Your Name</label>
+      <input type="text" class="form-control shadow" id="name" name="name" required placeholder="Please Enter Your Name">
+    </div>
+    <div class="mb-3 col-md-6 mt-2">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control shadow" id="email" name="email" required placeholder="Enter your Email,i can contact">
+      <div class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="subject" class="form-label">Subject</label>
+      <input type="text" class="form-control shadow" id="subject" name="subject" required placeholder="Subject">
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control shadow" id="message" name="message" rows="4" required></textarea>
+    </div>
+    <div class="mb-3">
+      <button class="shadow submit-btn" type="submit">Submit</button>
+    </div>
+  </form>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      setTimeout(() => {
+        this.reset();
+      }, 100);
+    });
+  </script>
+</div>

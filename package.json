@@ -1,0 +1,21 @@
+{
+  "name": "portpolio-node.js",
+  "version": "1.0.0",
+  "description": "A standart portpolio",
+  "license": "ISC",
+  "author": "Sashank sahoo",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "ejs": "^3.1.10",
+    "ejs-mate": "^4.0.0",
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.5"
+  }
+}

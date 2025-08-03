@@ -1,0 +1,9 @@
+.marker {
+  background-image: url("/images/vecteezy_man-head-user-profile-character_26418808.png");
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
