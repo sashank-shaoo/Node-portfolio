@@ -55,6 +55,10 @@ const routes = [
     view: "./aboutProject/ColorGeneraterDetails.ejs",
   },
   {
+    path: "/profile/projects/Calculator",
+    view: "./aboutProject/CalculatorDetails.ejs",
+  },
+  {
     path: "/profile/projects/SimonSays",
     view: "./aboutProject/SimonSaysDetails.ejs",
   },
